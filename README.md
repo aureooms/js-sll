@@ -1,7 +1,11 @@
 [js-sll](http://aureooms.github.io/js-sll)
 ==
 
-Singly linked list code bricks for JavaScript
+Singly linked list code bricks for JavaScript.
+
+```js
+let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-sll.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sll)
@@ -92,4 +96,22 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ### jam
 ```js
 require( [ "aureooms-js-sll" ] , function ( sll ) { ... } ) ;
+```
+
+## Use
+
+
+```js
+let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
+
+head.value ; // 9
+head.next.value ; // 2
+head.next.next.value ; // 5
+head.next.next.next ; // null
+
+for ( let value of sll.iter( head ) ) {
+
+	// yields 9 then 2 then  5
+
+}
 ```
