@@ -1,5 +1,5 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Singly linked list code bricks for JavaScript",
 	"ignore": [
 		"js/index.js",
