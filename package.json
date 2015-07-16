@@ -1,45 +1,45 @@
 {
-  "scripts": {
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "doc": "./node_modules/.bin/groc",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
-  },
-  "description": "Singly linked list code bricks for JavaScript",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aureooms/js-sll.git"
-  },
-  "keywords": [
-    "bricks",
-    "ender",
-    "javascript",
-    "js",
-    "linked",
-    "linked list",
-    "list",
-    "lists",
-    "node",
-    "nodes",
-    "singly",
-    "singly linked list",
-    "sll"
-  ],
-  "main": "js/dist/sll.js",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-sll/issues"
-  },
-  "dependencies": {},
-  "name": "aureooms-js-sll",
-  "version": "0.0.1",
-  "license": "AGPL-3.0",
-  "devDependencies": {
-    "aureooms-js-array": "^3.1.0",
-    "aureooms-js-itertools": "^1.1.2",
-    "aureooms-node-package": "^4.2.5"
-  },
-  "author": "aureooms",
-  "homepage": "http://aureooms.github.io/js-sll/",
-  "spm": {
-    "main": "js/dist/sll.js"
-  }
+	"scripts": {
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"doc": "./node_modules/.bin/groc",
+		"build": "./node_modules/.bin/aureooms-node-package-build"
+	},
+	"description": "Singly linked list code bricks for JavaScript",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aureooms/js-sll.git"
+	},
+	"keywords": [
+		"bricks",
+		"ender",
+		"javascript",
+		"js",
+		"linked",
+		"linked list",
+		"list",
+		"lists",
+		"node",
+		"nodes",
+		"singly",
+		"singly linked list",
+		"sll"
+	],
+	"main": "js/dist/sll.js",
+	"bugs": {
+		"url": "https://github.com/aureooms/js-sll/issues"
+	},
+	"dependencies": {},
+	"name": "aureooms-js-sll",
+	"version": "1.0.0",
+	"license": "AGPL-3.0",
+	"devDependencies": {
+		"aureooms-js-array": "^3.1.0",
+		"aureooms-js-itertools": "^1.1.2",
+		"aureooms-node-package": "^4.2.5"
+	},
+	"author": "aureooms",
+	"homepage": "http://aureooms.github.io/js-sll/",
+	"spm": {
+		"main": "js/dist/sll.js"
+	}
 }

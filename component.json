@@ -2,7 +2,7 @@
 	"scripts": [
 		"js/dist/sll.js"
 	],
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Singly linked list code bricks for JavaScript",
 	"license": "AGPL-3.0",
 	"name": "aureooms-js-sll",
