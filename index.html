@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><title>index</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="index"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/aureooms/js-sll"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-sll/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="-js-sll-http-aureooms-github-io-js-sll-"><a href="http://aureooms.github.io/js-sll">js-sll</a></h1>
-<p>Singly linked list code bricks for JavaScript</p>
+<p>Singly linked list code bricks for JavaScript.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> head = sll.list( [ <span class="hljs-number">9</span> , <span class="hljs-number">2</span> , <span class="hljs-number">5</span> ] ) ; <span class="hljs-comment">// { next : Node , value : 9 }</span></code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-sll.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-sll"><img src="http://img.shields.io/npm/v/aureooms-js-sll.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-sll"><img src="http://img.shields.io/bower/v/aureooms-js-sll.svg?style=flat" alt="Bower version"></a>
@@ -52,4 +53,17 @@ jspm install npm:aureooms-js-sll</code></pre>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"bower_components/aureooms-js-sll/js/dist/sll.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre>
 <p>Alternatively, you can use any tool mentioned <a href="http://bower.io/docs/tools/">here</a>.</p>
 <h3 id="jam">jam</h3>
-<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-sll"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> sll </span>) </span>{ ... } ) ;</code></pre></div></div></div></div></body></html>
+<pre><code class="lang-js"><span class="hljs-built_in">require</span>( [ <span class="hljs-string">"aureooms-js-sll"</span> ] , <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> sll </span>) </span>{ ... } ) ;</code></pre>
+<h2 id="use">Use</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> head = sll.list( [ <span class="hljs-number">9</span> , <span class="hljs-number">2</span> , <span class="hljs-number">5</span> ] ) ; <span class="hljs-comment">// { next : Node , value : 9 }</span>
+
+head.value ; <span class="hljs-comment">// 9</span>
+head.next.value ; <span class="hljs-comment">// 2</span>
+head.next.next.value ; <span class="hljs-comment">// 5</span>
+head.next.next.next ; <span class="hljs-comment">// null</span>
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> sll.iter( head ) ) {
+
+    <span class="hljs-comment">// yields 9 then 2 then  5</span>
+
+}</code></pre></div></div></div></div></body></html>
