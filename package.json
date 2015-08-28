@@ -30,7 +30,7 @@
 	},
 	"dependencies": {},
 	"name": "aureooms-js-sll",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "AGPL-3.0",
 	"devDependencies": {
 		"aureooms-js-array": "^3.1.0",
