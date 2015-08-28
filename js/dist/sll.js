@@ -2,7 +2,7 @@
 
 (function () {
 
-	"use strict";
+	'use strict';
 
 	var definition = function definition(exports, undefined) {
 
@@ -45,6 +45,23 @@
 		});
 
 		exports.iter = iter;
+
+		/* js/src/utils/len.js */
+
+		var len = function len(head) {
+
+			var length = 0;
+
+			while (head !== null) {
+
+				++length;
+				head = head.next;
+			}
+
+			return length;
+		};
+
+		exports.len = len;
 
 		/* js/src/utils/list.js */
 
