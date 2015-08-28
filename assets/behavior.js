@@ -217,6 +217,26 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "foldPrefix": "^",
               "name": "JavaScript"
             },
+            "sourcePath": "/home/aureooms/dev/js/js-sll/js/src/utils/len.js",
+            "projectPath": "js/src/utils/len.js",
+            "targetPath": "utils/len",
+            "pageTitle": "utils/len",
+            "title": "len"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
             "sourcePath": "/home/aureooms/dev/js/js-sll/js/src/utils/list.js",
             "projectPath": "js/src/utils/list.js",
             "targetPath": "utils/list",
