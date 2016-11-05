@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"aureooms-js-array": "^3.1.0",
 		"aureooms-js-itertools": "^3.0.0",
-		"aureooms-node-package": "^6.0.1"
+		"aureooms-node-package": "^7.0.0"
 	},
 	"author": "aureooms",
 	"homepage": "http://aureooms.github.io/js-sll/",
