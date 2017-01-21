@@ -33,7 +33,7 @@
 	"version": "1.0.2",
 	"license": "AGPL-3.0",
 	"devDependencies": {
-		"aureooms-js-array": "^3.1.0",
+		"aureooms-js-array": "^4.0.0",
 		"aureooms-js-itertools": "^3.0.0",
 		"aureooms-node-package": "^6.0.1"
 	},
