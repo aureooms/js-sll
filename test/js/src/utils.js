@@ -1,6 +1,6 @@
 
-var array = require( "aureooms-js-array" ) ;
-var itertools = require( "aureooms-js-itertools" ) ;
+var array = require( "@aureooms/js-array" ) ;
+var itertools = require( "@aureooms/js-itertools" ) ;
 
 var alloc = array.alloc ;
 var fill = array.fillfn ;
