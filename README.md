@@ -8,7 +8,7 @@ Singly linked list code bricks for JavaScript. Parent is
 let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
 ```
 
-[![NPM license](https://img.shields.io/npm/l/@aureooms/js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
+[![License](https://img.shields.io/github/license/aureooms/js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
 [![NPM version](https://img.shields.io/npm/v/@aureooms/js-sll.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sll)
 [![Bower version](https://img.shields.io/bower/v/@aureooms/js-sll.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-sll)
 [![Build Status](https://img.shields.io/travis/aureooms/js-sll.svg?style=flat)](https://travis-ci.org/aureooms/js-sll)
