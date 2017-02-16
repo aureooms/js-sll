@@ -8,15 +8,15 @@ Singly linked list code bricks for JavaScript. Parent is
 let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
 ```
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-sll.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sll)
-[![Bower version](http://img.shields.io/bower/v/aureooms-js-sll.svg?style=flat)](http://bower.io/search/?q=aureooms-js-sll)
+[![NPM license](http://img.shields.io/npm/l/@aureooms/js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/@aureooms/js-sll.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sll)
+[![Bower version](http://img.shields.io/bower/v/@aureooms/js-sll.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-sll)
 [![Build Status](http://img.shields.io/travis/aureooms/js-sll.svg?style=flat)](https://travis-ci.org/aureooms/js-sll)
 [![Coverage Status](http://img.shields.io/coveralls/aureooms/js-sll.svg?style=flat)](https://coveralls.io/r/aureooms/js-sll)
 [![Dependencies Status](http://img.shields.io/david/aureooms/js-sll.svg?style=flat)](https://david-dm.org/aureooms/js-sll#info=dependencies)
 [![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-sll.svg?style=flat)](https://david-dm.org/aureooms/js-sll#info=devDependencies)
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-sll.svg?style=flat)](https://codeclimate.com/github/aureooms/js-sll)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-sll.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sll)
+[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-sll.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sll)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-sll.svg?style=flat)](https://github.com/aureooms/js-sll/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-sll.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-sll)
 
@@ -35,7 +35,7 @@ and [npm](https://github.com/npm/npm).
 ```terminal
 jspm install github:aureooms/js-sll
 # or
-jspm install npm:aureooms-js-sll
+jspm install npm:@aureooms/js-sll
 ```
 ### duo
 No install step needed for duo!
@@ -47,27 +47,27 @@ component install aureooms/js-sll
 
 ### bower
 ```terminal
-bower install aureooms-js-sll
+bower install @aureooms/js-sll
 ```
 
 ### ender
 ```terminal
-ender add aureooms-js-sll
+ender add @aureooms/js-sll
 ```
 
 ### jam
 ```terminal
-jam install aureooms-js-sll
+jam install @aureooms/js-sll
 ```
 
 ### spm
 ```terminal
-spm install aureooms-js-sll --save
+spm install @aureooms/js-sll --save
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-sll --save
+npm install @aureooms/js-sll --save
 ```
 
 ## Require
@@ -75,7 +75,7 @@ npm install aureooms-js-sll --save
 ```js
 let sll = require( "github:aureooms/js-sll" ) ;
 // or
-import sll from 'aureooms-js-sll' ;
+import sll from '@aureooms/js-sll' ;
 ```
 ### duo
 ```js
@@ -84,19 +84,19 @@ let sll = require( "aureooms/js-sll" ) ;
 
 ### component, ender, spm, npm
 ```js
-let sll = require( "aureooms-js-sll" ) ;
+let sll = require( "@aureooms/js-sll" ) ;
 ```
 
 ### bower
 The script tag exposes the global variable `sll`.
 ```html
-<script src="bower_components/aureooms-js-sll/js/dist/sll.min.js"></script>
+<script src="bower_components/@aureooms/js-sll/js/dist/sll.min.js"></script>
 ```
 Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
 
 ### jam
 ```js
-require( [ "aureooms-js-sll" ] , function ( sll ) { ... } ) ;
+require( [ "@aureooms/js-sll" ] , function ( sll ) { ... } ) ;
 ```
 
 ## Use
