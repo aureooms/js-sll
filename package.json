@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "ava",
-    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "build": "rm -rf lib && babel src -d lib",
     "esdoc": "esdoc"
   },
   "description": "Singly linked list code bricks for JavaScript",
@@ -24,7 +24,7 @@
     "singly linked list",
     "sll"
   ],
-  "main": "js/dist/sll.js",
+  "main": "lib/index.js",
   "bugs": {
     "url": "https://github.com/aureooms/js-sll/issues"
   },
