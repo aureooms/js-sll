@@ -1,8 +1,8 @@
 {
   "scripts": {
     "test": "./node_modules/.bin/aureooms-node-package-test",
-    "doc": "./node_modules/.bin/groc",
-    "build": "./node_modules/.bin/aureooms-node-package-build"
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "esdoc": "esdoc"
   },
   "description": "Singly linked list code bricks for JavaScript",
   "repository": {
