@@ -1,5 +1,5 @@
 
-const iter = function* ( head ) {
+export function* iter ( head ) {
 
 	while ( head !== null ) {
 
@@ -8,6 +8,5 @@ const iter = function* ( head ) {
 
 	}
 
-} ;
+}
 
-exports.iter = iter ;

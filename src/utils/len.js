@@ -1,5 +1,5 @@
 
-const len = function ( head ) {
+export function len ( head ) {
 
 	let length = 0 ;
 
@@ -12,6 +12,5 @@ const len = function ( head ) {
 
 	return length ;
 
-} ;
+}
 
-exports.len = len ;

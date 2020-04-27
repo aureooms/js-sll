@@ -1,5 +1,5 @@
 
-const list = function ( iterable ) {
+export function list ( iterable ) {
 
 	const pt = new Node( null , undefined ) ;
 
@@ -11,6 +11,5 @@ const list = function ( iterable ) {
 
 	return pt.next ;
 
-} ;
+}
 
-exports.list = list ;

@@ -4,7 +4,7 @@
  * sake of simplicity.
  */
 
-const SinglyLinkedList = function ( iterable = null ) {
+export function SinglyLinkedList ( iterable = null ) {
 
 	this.front = null ;
 	this.back = null ;
@@ -16,13 +16,13 @@ const SinglyLinkedList = function ( iterable = null ) {
 
 	}
 
-} ;
+}
 
-const Iterator = function ( current ) {
+export function Iterator ( current ) {
 
 	this.current = current ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.insertAfter = function ( iterator , value ) {
 
@@ -34,7 +34,7 @@ SinglyLinkedList.prototype.insertAfter = function ( iterator , value ) {
 	++this.length ;
 	return this.iterator( node ) ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.unshift = function ( value ) {
 
@@ -42,7 +42,7 @@ SinglyLinkedList.prototype.unshift = function ( value ) {
 	this.front = new Node( this.front , value ) ;
 	return this.begin( ) ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.push = function ( value ) {
 
@@ -50,7 +50,7 @@ SinglyLinkedList.prototype.push = function ( value ) {
 	this.back = this.back.next = new Node( null , value ) ;
 	return this.iterator( this.back ) ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.shift = function ( ) {
 
@@ -63,7 +63,7 @@ SinglyLinkedList.prototype.shift = function ( ) {
 
 	return node.value ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.eraseAfter = function ( iterator ) {
 
@@ -73,7 +73,7 @@ SinglyLinkedList.prototype.eraseAfter = function ( iterator ) {
 
 	return node.next ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.clear = function ( ) {
 
@@ -83,23 +83,23 @@ SinglyLinkedList.prototype.clear = function ( ) {
 
 	return this ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.iterator = function ( node ) {
 	return new Iterator( node ) ;
-} ;
+}
 
 SinglyLinkedList.prototype.begin = function ( ) {
 	return this.iterator( this.front ) ;
-} ;
+}
 
 SinglyLinkedList.prototype.end = function(){
 	return this.iterator( this.back ) ;
-} ;
+}
 
 Iterator.prototype.copy = function ( ) {
 	return new Iterator( this.current ) ;
-} ;
+}
 
 Iterator.prototype.next = function ( ) {
 
@@ -111,7 +111,7 @@ Iterator.prototype.next = function ( ) {
 
 	return c === this.back ? { done : true } : { value : c.value , done : false } ;
 
-} ;
+}
 
 SinglyLinkedList.prototype[Symbol.iterator] = SinglyLinkedList.prototype.begin ;
 SinglyLinkedList.Node = Node;
@@ -130,7 +130,7 @@ SinglyLinkedList.prototype.prev = function ( node ) {
 
 	return current ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.pop = function ( ) {
 
@@ -143,7 +143,7 @@ SinglyLinkedList.prototype.pop = function ( ) {
 
 	return node.value ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.insertBefore = function ( iterator , value ) {
 
@@ -154,7 +154,7 @@ SinglyLinkedList.prototype.insertBefore = function ( iterator , value ) {
 
 	return this.insertAfter( this.iterator( prev ) , value ) ;
 
-} ;
+}
 
 SinglyLinkedList.prototype.erase = function ( iterator ) {
 
@@ -162,7 +162,6 @@ SinglyLinkedList.prototype.erase = function ( iterator ) {
 
 	return this.eraseAfter( prev ) ;
 
-} ;
+}
 
 
-exports.SinglyLinkedList = SinglyLinkedList ;
