@@ -8,17 +8,20 @@ Singly linked list code bricks for JavaScript. Parent is
 let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-sll.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-sll.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sll)
-[![Bower version](https://img.shields.io/bower/v/@aureooms/js-sll.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-sll)
-[![Build Status](https://img.shields.io/travis/aureooms/js-sll.svg?style=flat)](https://travis-ci.org/aureooms/js-sll)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-sll.svg?style=flat)](https://coveralls.io/r/aureooms/js-sll)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-sll.svg?style=flat)](https://david-dm.org/aureooms/js-sll#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-sll.svg?style=flat)](https://david-dm.org/aureooms/js-sll#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-sll.svg?style=flat)](https://codeclimate.com/github/aureooms/js-sll)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-sll.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sll)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sll.svg?style=flat)](https://github.com/aureooms/js-sll/issues)
-[![Inline docs](http://inch-ci.org/github/aureooms/js-sll.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-sll)
+[![License](https://img.shields.io/github/license/aureooms/js-sll.svg)](https://raw.githubusercontent.com/aureooms/js-sll/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-sll.svg)](https://www.npmjs.org/package/@aureooms/js-sll)
+[![Build](https://img.shields.io/travis/aureooms/js-sll/master.svg)](https://travis-ci.org/aureooms/js-sll/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-sll.svg)](https://david-dm.org/aureooms/js-sll)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-sll.svg)](https://david-dm.org/aureooms/js-sll?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sll.svg)](https://github.com/aureooms/js-sll/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-sll.svg)](https://www.npmjs.org/package/@aureooms/js-sll)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-sll.svg)](https://codeclimate.com/github/aureooms/js-sll/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-sll.svg)](https://codeclimate.com/github/aureooms/js-sll/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-sll/master.svg)](https://codecov.io/gh/aureooms/js-sll)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-sll.svg)](https://codeclimate.com/github/aureooms/js-sll/trends/technical_debt)
+[![Documentation](http://aureooms.github.io/js-sll//badge.svg)](http://aureooms.github.io/js-sll//source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sll)](https://bundlephobia.com/result?p=@aureooms/js-sll)
 
 Can be managed through [jspm](https://github.com/jspm/jspm-cli),
 [duo](https://github.com/duojs/duo),
