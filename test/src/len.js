@@ -1,21 +1,19 @@
 import test from 'ava';
 import * as sll from '../../src';
 
-import itertools from "@aureooms/js-itertools" ;
+import * as itertools from "@aureooms/js-itertools" ;
 
-var t = function ( iterable ) {
+function len ( t, iterable ) {
 
-	iterable = itertools.list( iterable ) ;
+	const array = itertools.list( iterable ) ;
 
-	assert.equal( sll.len( sll.list( iterable ) ) , itertools.len( iterable ) , iterable ) ;
+	t.deepEqual( sll.len( sll.list( array ) ) , itertools.len( array ) ) ;
 
-} ;
+}
 
-test( "len" , function ( assert ) {
+len.title = ( title , iterable ) => `len ${title || JSON.stringify(iterable)}` ;
 
-	t( [ ] ) ;
-	t( [ 1 ] ) ;
-	t( [ 1 , 2 ] ) ;
-	t( itertools.range( 100 ) ) ;
-
-} ) ;
+test( len , [ ] ) ;
+test( len , [ 1 ] ) ;
+test( len , [ 1 , 2 ] ) ;
+test( 'itertools.range(100)', len , itertools.range( 100 ) ) ;

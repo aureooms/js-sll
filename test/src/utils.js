@@ -1,33 +1,31 @@
 import test from 'ava';
 import * as sll from '../../src';
 
-import array from "@aureooms/js-array" ;
-import itertools from "@aureooms/js-itertools" ;
+import * as array from "@aureooms/js-array" ;
+import * as itertools from "@aureooms/js-itertools" ;
 
 var alloc = array.alloc ;
 var fill = array.fillfn ;
 
 var list = itertools.list ;
 var iter = sll.iter ;
-var nods = sll.list ;
+var nodes = sll.list ;
 
-var t = function ( n ) {
+function macro ( t , n ) {
 
-	var A = alloc( n ) ;
+	const A = alloc( n ) ;
 
 	fill( A , 0 , n , Math.random ) ;
 
-	t.deepEqual( list( iter( nods( A ) ) ) , A , A ) ;
+	t.deepEqual( list( iter( nodes( A ) ) ) , A ) ;
 
-} ;
+}
 
-test( "iter and list" , t => {
+macro.title = ( title , n ) => `iter(list([...])) <${n}>` ;
 
-	[
-		0 , 1 , 2 , 3 , 4 , 5 ,
-		10 , 11 , 13 ,
-		63 , 64 , 65 ,
-		100000
-	].map( t ) ;
-
-} ) ;
+[
+	0 , 1 , 2 , 3 , 4 , 5 ,
+	10 , 11 , 13 ,
+	63 , 64 , 65 ,
+	100000
+].map( x => test(macro, x) ) ;
