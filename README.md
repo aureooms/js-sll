@@ -1,8 +1,9 @@
-[js-sll](http://aureooms.github.io/js-sll)
+[@aureooms/js-sll](http://aureooms.github.io/js-sll)
 ==
 
-Singly linked list code bricks for JavaScript. Parent is
-[aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
+Singly linked list code bricks for JavaScript.
+See [docs](http://aureooms.github.io/js-sll/index.html).
+Parent is [@aureooms/js-data-structures](https://github.com/aureooms/js-data-structures).
 
 ```js
 let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
