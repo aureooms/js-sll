@@ -2,7 +2,8 @@
   "scripts": {
     "test": "ava",
     "build": "rm -rf lib && babel src -d lib",
-    "esdoc": "esdoc"
+    "esdoc": "esdoc",
+    "prepare": "npm run build"
   },
   "description": "Singly linked list code bricks for JavaScript",
   "repository": {
