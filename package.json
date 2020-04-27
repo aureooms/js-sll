@@ -3,7 +3,8 @@
     "test": "ava",
     "build": "rm -rf lib && babel src -d lib",
     "esdoc": "esdoc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "cover": "nyc --reporter=lcov npm test"
   },
   "description": "Singly linked list code bricks for JavaScript",
   "repository": {
