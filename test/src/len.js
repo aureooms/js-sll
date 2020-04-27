@@ -1,5 +1,7 @@
+import test from 'ava';
+import * as sll from '../../src';
 
-var itertools = require( "@aureooms/js-itertools" ) ;
+import itertools from "@aureooms/js-itertools" ;
 
 var t = function ( iterable ) {
 

@@ -1,6 +1,8 @@
+import test from 'ava';
+import * as sll from '../../src';
 
-var array = require( "@aureooms/js-array" ) ;
-var itertools = require( "@aureooms/js-itertools" ) ;
+import array from "@aureooms/js-array" ;
+import itertools from "@aureooms/js-itertools" ;
 
 var alloc = array.alloc ;
 var fill = array.fillfn ;
@@ -15,11 +17,11 @@ var t = function ( n ) {
 
 	fill( A , 0 , n , Math.random ) ;
 
-	deepEqual( list( iter( nods( A ) ) ) , A , A ) ;
+	t.deepEqual( list( iter( nods( A ) ) ) , A , A ) ;
 
 } ;
 
-test( "iter and list" , function ( ) {
+test( "iter and list" , t => {
 
 	[
 		0 , 1 , 2 , 3 , 4 , 5 ,
