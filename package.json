@@ -54,5 +54,18 @@
   "homepage": "http://aureooms.github.io/js-sll/",
   "spm": {
     "main": "js/dist/sll.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
   }
 }
