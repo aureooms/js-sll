@@ -1,40 +1,35 @@
 {
-  "scripts": {
-    "test": "ava",
-    "build": "rm -rf lib && babel src -d lib",
-    "esdoc": "esdoc",
-    "prepare": "npm run build",
-    "cover": "nyc --reporter=lcov npm test",
-    "release": "np"
-  },
+  "name": "@aureooms/js-sll",
   "description": "Singly linked list code bricks for JavaScript",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aureooms/js-sll.git"
+  "version": "1.0.2",
+  "author": "aureooms",
+  "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
+    "require": [
+      "@babel/polyfill",
+      "@babel/register"
+    ],
+    "timeout": "1m"
   },
-  "keywords": [
-    "bricks",
-    "ender",
-    "javascript",
-    "js",
-    "linked",
-    "linked list",
-    "list",
-    "lists",
-    "node",
-    "nodes",
-    "singly",
-    "singly linked list",
-    "sll"
-  ],
-  "main": "lib/index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-async-generator-functions"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
   "bugs": {
     "url": "https://github.com/aureooms/js-sll/issues"
   },
   "dependencies": {},
-  "name": "@aureooms/js-sll",
-  "version": "1.0.2",
-  "license": "AGPL-3.0",
   "devDependencies": {
     "@aureooms/js-array": "^4.0.0",
     "@aureooms/js-itertools": "^3.4.0",
@@ -52,32 +47,37 @@
     "np": "6.2.2",
     "nyc": "15.0.1"
   },
-  "author": "aureooms",
-  "homepage": "http://aureooms.github.io/js-sll/",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-async-generator-functions"
-    ],
-    "env": {
-      "development": {
-        "sourceMaps": "inline"
-      }
-    }
-  },
-  "ava": {
-    "files": [
-      "test/src/**/*"
-    ],
-    "require": [
-      "@babel/polyfill",
-      "@babel/register"
-    ],
-    "timeout": "1m"
-  },
   "files": [
     "lib"
-  ]
+  ],
+  "homepage": "http://aureooms.github.io/js-sll/",
+  "keywords": [
+    "bricks",
+    "ender",
+    "javascript",
+    "js",
+    "linked",
+    "linked list",
+    "list",
+    "lists",
+    "node",
+    "nodes",
+    "singly",
+    "singly linked list",
+    "sll"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aureooms/js-sll.git"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "esdoc": "esdoc",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
+  }
 }
