@@ -54,9 +54,6 @@
   },
   "author": "aureooms",
   "homepage": "http://aureooms.github.io/js-sll/",
-  "spm": {
-    "main": "js/dist/sll.js"
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
