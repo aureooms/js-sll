@@ -1,3 +1,5 @@
+import { Node } from './Node' ;
+
 /**
  * Doubly linked list implementation
  * making use of dummy nodes for the

@@ -1,3 +1,4 @@
+import { Node } from '..' ;
 
 export function list ( iterable ) {
 
