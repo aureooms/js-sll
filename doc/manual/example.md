@@ -1,6 +1,6 @@
 # Examples
 
-> More examples in [the test files](https://github.com/aureooms/js-sll/tree/master/test/src).
+> More examples in [the test files](https://github.com/make-github-pseudonymous-again/js-sll/tree/master/test/src).
 
 ```js
 let head = sll.list( [ 9 , 2 , 5 ] ) ; // { next : Node , value : 9 }
